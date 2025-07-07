@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pfotensorge – Mobile Tierheilpraxis</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      padding-top: 70px;
+	font-size: 18px; /* Einheitliche Schriftgröße */
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: rgba(106, 76, 147, 0.8); /* halbtransparent violett */
+      color: white;
+      padding: 1rem 0.5rem; /* schmaler Header */
+      text-align: center;
+      z-index: 1000;
+      backdrop-filter: blur(6px);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    }
+
+
+    header h1 {
+      margin: 0;
+      font-size: 1.6rem;
+    }
+
+    nav {
+      background-color: #fff;
+      text-align: center;
+      padding: 1rem;
+      position: sticky;
+      top: 100px;
+      z-index: 999;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    }
+
+    nav a {
+      margin: 0 1rem;
+      color: #6a4c93;
+      text-decoration: none;
+      font-weight: bold;
+    }
+nav a {
+  font-size: 1rem;
+}
+
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+        scroll-margin-top: 100px; /* sorgt für Abstand beim Anscrollen */
+	padding: 2rem 1rem;
+      max-width: 800px;
+      margin: auto;
+    }
+
+   
+      h2 {
+  color: #6a4c93;
+  font-size: 1.8rem; /* gleiche Größe wie bei „Über mich“ */
+  margin-bottom: 1rem;
+
+
+    }
+
+    #ueber {
+      color: #111; /* dunklerer Text */
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+
+
+.bild-mit-schatten {
+  max-width: 100%;
+  max-height: 300px;
+  height: auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+.kleine-bildbox {
+  width: 45%;
+  max-width: 300px;
+  height: auto;
+}
+
+    .kontakt-box {
+      background-color: #eae6f2;
+      padding: 1rem;
+      border-radius: 8px;
+    }
+
+    #bewertungen {
+      background-color: #ffffff;
+      padding: 2rem 1rem;
+      max-width: 800px;
+      margin: auto;
+      border-top: 1px solid #ddd;
+    }
+
+    #bewertungen h2 {
+      color: #6a4c93;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+
+
+    .bewertung {
+      background-color: #f4f4f4;
+      border-left: 4px solid #6a4c93;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-radius: 5px;
+      font-style: italic;
+    }
+
+    .bewertung footer {
+      font-style: normal;
+      font-weight: bold;
+      margin-top: 0.5rem;
+      color: #444;
+    }
+
+    footer {
+      background-color: #6a4c93;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.3rem;
+      }
+
+      nav a {
+        display: block;
+        margin: 0.5rem 0;
+      }
+    }
+  </style>
+</head>
+
+
+
+<body>
+
+<header style="display: flex; align-items: center; justify-content: center; gap: 1rem; flex-wrap: wrap; text-align: left;">
+  <img src="images/pfote-logo.png" alt="Pfotenlogo" style="height: 80px; flex-shrink: 0;">
+  <div>
+    <h1 style="margin: 0;">Mobile Tierheilpraxis Pfotensorge</h1>
+    <p style="margin: 0;">Mit Herz und Verstand  – direkt vor Ort.</p>
+  </div>
+</header>
+
+<nav>
+
+  <a href="#start">Philosophie</a>
+  <a href="#ueber">Über mich</a>
+  <a href="#leistungen">Leistungen</a>
+  <a href="#qualifikationen">Qualifikationen</a>
+  <a href="#einsatzgebiet">Einsatzgebiet</a> <!-- NEU -->
+  <a href="#bewertungen">Kundenstimmen</a>
+  <a href="#kontakt">Kontakt</a>
+
+
+</nav>
+<section id="start" class="abschnitt hervorgehoben">
+  <h2 class="zentriert">Nicht einfach nur ein Tier –<br>Lebens-Gefährten</h2>
+
+<div style="text-align:center; margin: 2rem 0;">
+  <img src="images/katze-bett.jpg" 
+       alt="Katze liegt entspannt auf dem Bett" 
+       style="max-width: 100%; border-radius: 12px; box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);">
+</div>
+
+<p class="text">
+  Für manche ist es „nur ein Hund“, „nur eine Katze“.  
+  Für dich ist es ein Gefährte, ein Seelenwesen –  
+  Teil deiner Familie, deines Lebens, deines Herzens.
+</p>
+<p>
+  Du spürst, wenn es leidet – auch ohne Worte.  
+  Du suchst jemanden, der das ebenfalls sieht. Der zuhört. Der mitfühlt und der hilft.
+</p>
+<p>
+  Ich begleite Tiere und Menschen, die verbunden sind.  
+  Meine Arbeit beginnt nicht mit Methoden – sondern mit echtem Verstehen.
+</p>
+<p>
+  <strong>Wenn dein Tier für dich so wertvoll ist wie ein Kind –  
+  dann bist du bei mir richtig.</strong>
+</p>
+
+  
+
+    Tiere gehören für mich ganz selbstverständlich zur Familie. Als vierfache Mama, umgeben von Hund, Katzen, Hahn und Hennen, weiß ich, wie tief die Verbindung zu unseren tierischen Gefährten geht – und wie sehr ihr Wohlbefinden unser eigenes beeinflusst. Viele Arten von Tiere haben meinen Lebensweg begleitet: Hasen, Meerschweinchen, Goldhamster, Bianca unsere Lachtaube, eine weisse Maus, und nicht zuletzt auch ein Wellensittich - und alle hatten einen Namen. Auch Pferde durfte ich schon behandeln und reiten, aber ehrlicherweise muss ich gestehen, dass es auf das Pferd ankommt, ob wir miteinander können. Ich fasse gerne Echsen, Blindschleichen und Schlangen an, ich finde ihre Haut so wunderbar...
+  </p>
+
+  <p class="text">...</p>
+
+    Mit meiner mobilen Tierheilpraxis komme ich zu Dir nach Hause – dahin, wo Dein Gefährte sich am sichersten fühlt. Ich nehme mir Zeit für eine liebevolle, ganzheitliche Begleitung. Dabei schaue ich nicht nur auf Symptome, sondern auf das große Ganze: Wesen, Umgebung, Geschichte.
+  </p>
+
+ 
+    Ob bei chronischen Beschwerden, seelischem Ungleichgewicht oder einfach dem Wunsch nach natürlicher Begleitung – ich bin für Dich und Dein Tier da. Sanft, individuell und mit offenem Herzen.
+  </p>
+
+
+</section>
+
+<section id="Philosophie">
+  <h2 class="zentriert">Wertschätzung & Vertrauen</h2>
+
+<div style="text-align:center; margin: 2rem 0;">
+  <img src="images/hund-vertraut.jpg" 
+       alt="Hund liegt mit dem Kopf an einem Fuß" 
+       style="max-width: 100%; border-radius: 12px; box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);">
+</div>
+  <p>
+    Ich arbeite mit Menschen, die bereit sind, wirklich hinzuschauen.  
+    Die nicht nach schnellen Rezepten suchen, sondern nach einem tieferen Weg.  
+    Die spüren, dass ihr Tier ihnen etwas sagen will – und es verdient, ernst genommen zu werden.
+  </p>
+  <p>
+    Wenn du nur eine schnelle Lösung suchst, bin ich vielleicht nicht die Richtige.  
+    Wenn du dein Tier aber liebst wie ein Kind, begleite ich euch mit allem, was ich habe:  
+    Mit Gefühl, Wissen und Geduld.
+  </p>
+
+
+</section>
+
+
+<section id="ueber"class="text">
+  
+  <h2>Über mich</h2>
+  
+ <p>
+Manchmal führt das Leben uns auf unerwartete, aber wunderbare Wege. Ursprünglich bin ich ausgebildete IT-Kauffrau mit einem abgeschlossenem betriebswirtschaftlichen Studium im Gepäck. Viele Jahre war ich in der digitalen Welt zuhause – doch mein Herz schlug immer für Tiere.</p>
+
+<p>
+
+Dieser Herzensweg führte mich schließlich zur ganzheitlichen Tierheilkunde. Ich absolvierte meine fundierte Ausbildung zur Tierheilpraktikerin bei der <strong>Paracelsus Schule</strong> und gründete meine mobile Praxis „Pfotensorge“. Heute begleite ich Tiere mit Verstand, Intuition und großer Hingabe – direkt da, wo sie sich am wohlsten fühlen.
+
+</p>
+
+ <p>
+Ich weiß wie wichtig eine achtsame und individuelle Betreuung ist – für jedes Tier und seine Menschen.</p>
+
+<p>
+
+Ich bin Tierheilpraktikerin aus tiefster Überzeugung – und mit ganzem Herzen für Tiere und ihre Menschen da. 
+</p>
+
+
+
+
+</section>
+
+
+
+<section id="leistungen">
+  <h2>Leistungen</h2>
+
+
+
+  
+<div style="background-color:#f3f0f9; border-left:4px solid #6a4c93; padding:1rem; margin-bottom:1.5rem;">
+    <p> Jedes Tier ist einzigartig – genau wie seine Bedürfnisse.</p>
+
+  </div>
+
+
+
+<div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+   <img src="images/teddy-im-bett.jpg" 
+       alt="teddy im bett" 
+       class="bild-mit-schatten kleine-bildbox">
+   <img src="images/katze-schlafend-kopf-rechts.jpeg" 
+       alt="katze eingerollt" 
+       class="bild-mit-schatten kleine-bildbox">
+  
+</div>
+
+
+
+
+<p class="text">In meiner mobilen Praxis begleite ich dich und dein Tier ganzheitlich, mit viel Zeit, Ruhe und Herz. Ob feine Wesensveränderungen, chronische Beschwerden oder akute Themen – ich nehme mir Zeit, genau hinzuschauen und gemeinsam mit dir den passenden Weg zu finden.</p>
+
+<p class="text"> Ich arbeite sanft, naturheilkundlich und individuell – abgestimmt auf das Wesen und die Geschichte deines Pfotengefährten:</p> 
+
+</div>
+
+
+<p class="text">...</p>
+
+<ul class="text">
+
+ <li><strong>Homöopathie</strong> – klassisch, individuell und auf die Konstitution abgestimmt</li>
+<p class="text"> </p>
+ <li><strong>Phytotherapie</strong> (z. B. Ceres-Tinkturen) – Pflanzenkraft mit Tiefe</li>
+<p class="text"> </p>
+ <li><strong>Schüßler Salze</strong> – sanfte Mineralstofftherapie</li>
+<p class="text"> </p>
+ <li><strong>Bachblüten</strong> – feine Seelenbegleiter bei Stress, Angst oder Unruhe</li> 
+<p class="text"> </p>
+ <li><strong>Energetische Behandlung</strong> – wenn Worte fehlen, aber Berührung wirkt</li>
+
+ </ul> 
+
+<!-- Das ist ein Kommentar 
+
+<p class="text">...</p>
+
+ -->
+
+<div 
+	style="margin-top:2rem; text-align:center;"> 
+	<img src="images/vw-golf-pfotensorge.png" alt="Blauer VW Golf Variant mit Heilpraktiker-Zeichen und Schriftzug 'Pfotensorge' auf der Tür" class="bild-mit-schatten">
+ </div>
+
+ <p style="margin-top:1rem;">Ich komme zu euch mit meinem blauen Praxisauto – ausgestattet für alles, was ich für die Behandlung vor Ort brauche. So bleibt dein Tier ganz in seiner gewohnten Umgebung, was für viele Tiere deutlich weniger Stress bedeutet.</p>
+  
+</section>
+
+<section id="qualifikationen">
+
+<!-- Das ist ein Kommentar 
+ <h2>Meine Qualifikationen</h2>
+-->
+
+<div id="qualifikationen-slideshow" style="max-width: 800px; margin: auto; padding: 2rem 1rem;">
+  <h2 style="text-align:left; color:#6a4c93;">Meine Qualifikationen</h2>
+  <div style="position: relative; overflow: hidden; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">
+    <img id="slideshow-img" src="quali/02_grundkurs.png" alt="Qualifikationsnachweis" style="width:100%; height:auto; display:block;">
+    <div id="slideshow-caption" style="text-align:center; background-color:#fff; padding: 0.8rem; font-size:1rem; color:#333;">
+      Schüßlersalze Grundkurs (Zentrum für Naturheilkunde)
+    </div>
+    <button onclick="prevSlide()" style="position:absolute;top:50%;left:10px;transform:translateY(-50%);background:none;border:none;font-size:2rem;color:#6a4c93;cursor:pointer;">❮</button>
+    <button onclick="nextSlide()" style="position:absolute;top:50%;right:10px;transform:translateY(-50%);background:none;border:none;font-size:2rem;color:#6a4c93;cursor:pointer;">❯</button>
+  </div>
+</div>
+
+<script>
+  const images = [
+  <!-- Das ist ein Kommentar 
+{ src: 'quali/01_aufbaukurs.png', caption: 'Schüßlersalze Aufbaukurs (Zentrum für Naturheilkunde)' },
+-->
+    { src: 'quali/02_grundkurs.png', caption: 'Schüßlersalze Grundkurs (Zentrum für Naturheilkunde)' },
+    { src: 'quali/03_heilstroemen.png', caption: 'Heilströmen für Tiere (Isolde Richter Schule)' },
+    { src: 'quali/04_energiearbeit.png', caption: 'Energiearbeit für Tiere (Isolde Richter Schule)' },
+    { src: 'quali/05_calming_signale.png', caption: 'Calming Signale beim Hund (Paracelsus Schule)' },
+    { src: 'quali/06_heilpflanzen.png', caption: 'Heilpflanzen in der Tierheilkunde (Ceres Akademie)' }
+  ];
+
+  let currentIndex = 0;
+  const imgElement = document.getElementById('slideshow-img');
+  const captionElement = document.getElementById('slideshow-caption');
+
+  function showSlide(index) {
+    currentIndex = (index + images.length) % images.length;
+    imgElement.src = images[currentIndex].src;
+    captionElement.textContent = images[currentIndex].caption;
+  }
+
+  function nextSlide() {
+    showSlide(currentIndex + 1);
+  }
+
+  function prevSlide() {
+    showSlide(currentIndex - 1);
+  }
+
+  // Automatischer Wechsel alle 6 Sekunden
+  setInterval(nextSlide, 6000);
+</script>
+</section>
+
+
+<section id="einsatzgebiet">
+ 
+ <h2>Einsatzgebiet</h2>
+  <p>  Ich bin mobil für Sie unterwegs im <strong>Landkreis Rottweil und Freudenstadt</strong>.  
+  Außerhalb dieses Bereichs biete ich gerne <strong>telefonische oder schriftliche Beratung</strong> an.</p>
+
+  <div id="karte-wrapper" style="margin-top:1.5rem; border:1px solid #ccc; padding:1rem; text-align:center; background-color:#f9f9f9;">
+  <p> Diese Karte wird von OpenStreetMap eingebettet. Beim Laden werden personenbezogene Daten (z. B. IP-Adresse) an Drittanbieter übermittelt.</p>
+  <button onclick="ladeKarte()" style="padding:0.6rem 1.2rem; background-color:#6a4c93; color:white; border:none; border-radius:5px; cursor:pointer;">
+    Karte laden
+  </button>
+</div>
+
+<div id="karte-embed" style="display:none; margin-top:1rem;">
+  <!-- Karte wird per JavaScript eingefügt -->
+</div>
+
+
+
+</section>
+
+<section id="bewertungen">
+  <h2>Kundenstimmen</h2>
+
+  <div class="bewertung">
+   <p> „Frau Kimmich ist sehr einfühlsam mit unserem Hund umgegangen. Wir fühlen uns bestens beraten.“</p>
+    <footer>– Klaus mit Elly</footer>
+  </div>
+
+  <div class="bewertung">
+<p> „Endlich jemand, der auch auf die Ernährung achtet. Meine Katze frisst wieder – danke!“</p>
+    <footer>– Kathy mit Ritchi</footer>
+  </div>
+
+  <div class="bewertung">
+    <p> „Kompetent, herzlich und zuverlässig. Absolute Empfehlung!“</p>
+    <footer>– Claudia mit Selva</footer>
+  </div>
+</section>
+
+<section id="kontakt">
+  <h2>Kontakt</h2>
+  <div class="kontakt-box">
+    <p>
+<strong>
+Mobile Tierheilpraxis Pfotensorge</strong><br>
+    <p><strong>Postanschrift:</strong> wird auf Anfrage bekannt gegeben<br>
+Die Praxis ist ausschließlich mobil tätig.</p>
+
+    E-Mail: <a href="mailto:info@pfotensorge.de">info@pfotensorge.de</a></p>
+  </div>
+</section>
+
+<footer>
+  &copy; 2025 Pfotensorge – Mobile Tierheilpraxis |
+  <a href="#datenschutz" style="color:white; text-decoration:underline;">Datenschutz</a> |
+  <a href="#impressum" style="color:white; text-decoration:underline;">Impressum</a>
+</footer>
+
+<section id="datenschutz">
+  <h2>Datenschutzerklärung</h2>
+  <p>Der Schutz Deiner persönlichen Daten ist mir ein besonderes Anliegen. Die Daten werden ausschließlich auf Grundlage der gesetzlichen Bestimmungen (DSGVO, TMG) verarbeitet.</p>
+
+  <h3>Kontakt mit mir</h3>
+  <p>Wenn Sie per E-Mail oder telefonisch Kontakt mit mir aufnehmen, werden die angegebenen Daten zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei mir gespeichert. Diese Daten gebe ich nicht ohne Deine Einwilligung weiter.</p>
+
+  <h3>OpenStreetMap</h3>
+<p>Zur Darstellung meines Einsatzgebietes nutze ich Kartendienste von OpenStreetMap (osm.org). Beim Aufrufen dieser Karte werden möglicherweise Daten (z. B. IP-Adresse) an OpenStreetMap übertragen. Weitere Informationen dazu finden Sie unter <a href="https://wiki.osmfoundation.org/wiki/Privacy_Policy" target="_blank">osmfoundation.org</a>.</p>
+
+  <h3>Ihre Rechte</h3>
+ <p>Ihnen stehen grundsätzlich die Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit und Widerspruch zu. Wenn Sie glauben, dass die Verarbeitung Ihrer Daten gegen das Datenschutzrecht verstößt, kontaktieren Sie mich bitte.</p>
+</section>
+
+<section id="impressum">
+  <h2>Impressum</h2>
+  <p>Angaben gemäß § 5 TMG:</p>
+
+  <p><strong>Mobile Tierheilpraxis Pfotensorge</strong><br>
+  Postfach [deine Postfachnummer]<br>
+  78737	Fluorn-Winzeln</p>
+
+  <p>Telefon: +49 123 456789<br>
+  E-Mail: <a href="mailto:info@pfotensorge.de">info@pfotensorge.de</a></p>
+
+  <p>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:<br>
+  Die Betreiberin der Seite</p>
+
+
+    <p><strong>Mitglied im:</strong><br />
+    Verband Deutscher Tierheilpraktiker e. V. (VDT)</p>
+  </section>
+
+</body>
+<script>
+function ladeKarte() {
+  const iframe = document.createElement("iframe");
+  iframe.src = "https://www.openstreetmap.org/export/embed.html?bbox=8.35,48.25,8.65,48.50&layer=mapnik";
+  iframe.width = "100%";
+  iframe.height = "400";
+  iframe.frameBorder = "0";
+  iframe.scrolling = "no";
+  iframe.style.border = "1px solid #ccc";
+
+  document.getElementById("karte-wrapper").style.display = "none";
+  document.getElementById("karte-embed").style.display = "block";
+  document.getElementById("karte-embed").appendChild(iframe);
+}
+</script>
+
+</html>
+
